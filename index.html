@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princess Ibtihaj — Portfolio</title>
+    <meta name="description" content="CS &amp; STS at Colby. Building stuff where tech meets people. Bangladesh-inspired site." />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Poppins + Playfair for a mix of clean and a bit of character -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-orbit-layer"></div>
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <div class="nav__brand">
+          <span class="nav__flag-circle"></span>
+          <span class="nav__logo-text">Princess Ibtihaj</span>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Highlights</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__tagline">tech + ethics + community (and Bangladesh vibes)</p>
+          <h1 class="hero__title">
+            <span class="hero__name">Princess Ibtihaj</span>
+            <span class="hero__role">Computer Science &amp; STS @ Colby College</span>
+          </h1>
+          <p class="hero__intro">
+            I’m into the places where tech actually touches people—startup world in Cambridge,
+            healthcare in NYC, and a lot of learning in between. This site’s colors are a nod to
+            where my family’s from; the rest is just me figuring it out as I go.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">See what I’ve been up to</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+          <div class="hero__meta">
+            <span>Junior · Colby College</span>
+            <span>Questbridge & Ralph Bunche Scholar</span>
+          </div>
+        </div>
+          <div class="hero__visual">
+          <!-- Three.js hero flag renders into this container -->
+          <div id="hero3d" class="hero-3d"></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section section--light">
+        <div class="section__header">
+          <h2>About</h2>
+          <p>Short version.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-grid__story">
+            <p>
+              Junior at Colby, double major in <strong>Computer Science</strong> and
+              <strong>Science, Technology &amp; Society</strong>. I got into CS because
+              I wanted to build things; I stayed for the part where you ask who it’s for and why it matters.
+            </p>
+            <p>
+              I grew up Bangladeshi in the Bronx, so I’m used to moving between worlds. These days
+              that shows up in how I think about product, strategy, and who’s in the room when we make decisions.
+            </p>
+            <p>
+              Right now I’m most interested in <strong>product management</strong>, <strong>consulting</strong>,
+              and <strong>technical strategy</strong>—anything where I can help turn messy problems into
+              stuff that actually works for people.
+            </p>
+          </div>
+          <aside class="about-grid__meta">
+            <h3>Quick facts</h3>
+            <ul class="chip-list">
+              <li class="chip">CS &amp; STS @ Colby</li>
+              <li class="chip">Questbridge + Ralph Bunche Scholar</li>
+              <li class="chip">Bengali, Hindi, English</li>
+              <li class="chip">Ethical tech / impact</li>
+              <li class="chip">Speaking &amp; writing</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--dark">
+        <div class="section__header">
+          <h2>Experience</h2>
+          <p>Jobs and internships so far.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__body">
+              <header class="timeline-item__header">
+                <h3>Special Operations Intern @ Æthos</h3>
+                <span class="timeline-item__meta">Cambridge, MA · Feb – May 2025</span>
+              </header>
+              <p>
+                Æthos is a startup accelerator—50+ companies, lots of events. I was the first intern,
+                so a bit of everything: outreach, calendar, talking to founders.
+              </p>
+              <ul class="timeline-item__bullets">
+                <li>Reached out to 40+ orgs and 30+ schools for partnerships and events.</li>
+                <li>Kept the AI/tech event calendar updated so founders could actually use it.</li>
+                <li>Did founder interviews and wrote up a hypothetical startup model for the team to review.</li>
+              </ul>
+              <span class="timeline-item__tags">
+                <span class="tag">ops</span>
+                <span class="tag">community</span>
+                <span class="tag">strategy</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__body">
+              <header class="timeline-item__header">
+                <h3>IT Intern @ NYC Health + Hospitals</h3>
+                <span class="timeline-item__meta">NYC · summer 2024</span>
+              </header>
+              <p>
+                Worked on training stuff for 200+ staff. Less coding, more making sure people could
+                find and use the courses we had.
+              </p>
+              <ul class="timeline-item__bullets">
+                <li>Built out module content for internal training.</li>
+                <li>Wrote clearer catalog copy so the curriculum was easier to browse.</li>
+                <li>Presented at the end and got to see how different teams use the same tools.</li>
+              </ul>
+              <span class="timeline-item__tags">
+                <span class="tag">training</span>
+                <span class="tag">writing</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__body">
+              <header class="timeline-item__header">
+                <h3>Multimedia Technician @ Colby ITS</h3>
+                <span class="timeline-item__meta">Maine · Sep 2023 – Jan 2025</span>
+              </header>
+              <p>
+                AV and tech for campus events. If something broke right before a talk, that was usually me fixing it.
+              </p>
+              <ul class="timeline-item__bullets">
+                <li>Ticket queue, coordination with other departments, setting up and tearing down.</li>
+                <li>Lots of troubleshooting—software, mics, projectors. Good practice staying calm when things go wrong.</li>
+              </ul>
+              <span class="timeline-item__tags">
+                <span class="tag">AV</span>
+                <span class="tag">support</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__body">
+              <header class="timeline-item__header">
+                <h3>Programming/Admin Intern @ Indigo Arts Alliance</h3>
+                <span class="timeline-item__meta">Remote · Jan – Feb 2024</span>
+              </header>
+              <p>
+                Short but really valuable. IAA does art + culture work; I helped with how they organize
+                their digital stuff and showed up to marketing meetings.
+              </p>
+              <ul class="timeline-item__bullets">
+                <li>Wireframe and mind map for their social + Google archive.</li>
+                <li>Learned a lot from my supervisors—both about the work and about how to show up in a remote role.</li>
+              </ul>
+              <span class="timeline-item__tags">
+                <span class="tag">wireframing</span>
+                <span class="tag">admin</span>
+              </span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__body">
+              <header class="timeline-item__header">
+                <h3>CNA @ The New Jewish Home</h3>
+                <span class="timeline-item__meta">NY · Oct 2022 – Jul 2023</span>
+              </header>
+              <p>
+                Got certified through a fast-track program, then worked in a dementia unit. Hard job
+                but it taught me a lot about listening and showing up when things aren’t easy.
+              </p>
+              <ul class="timeline-item__bullets">
+                <li>Direct care, talking with families, working with nurses.</li>
+                <li>Still use a lot of what I learned there when I think about “users” and “stakeholders”—they’re people first.</li>
+              </ul>
+              <span class="timeline-item__tags">
+                <span class="tag">care</span>
+                <span class="tag">empathy</span>
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--light">
+        <div class="section__header">
+          <h2>Highlights</h2>
+          <p>Stuff I’m proud of.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Æthos Showcase Speech (Spring 2025)</h3>
+            <p>
+              Gave a short talk at my internship graduation about growth, messing up, and learning to lead
+              without losing the empathy part. You can watch the full thing below.
+            </p>
+            <p class="card__meta">Grace, leadership, community—the usual themes I keep coming back to.</p>
+            <!-- Embedded YouTube version of the speech -->
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/uiwta4xkCBQ"
+                title="Æthos Showcase Speech (Spring 2025)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Semester in the City</h3>
+            <p>
+              College for Social Innovation program: full-time at Æthos plus two courses. One was
+              “Social Innovator’s Toolbox” (design, systems thinking), the other “Becoming a Problem Solver”
+              (reflection, professional stuff). Really shaped how I think about impact.
+            </p>
+          </article>
+
+          <article class="card card--bengal-glow">
+            <h3>This website</h3>
+            <p>
+              I built this portfolio with HTML, CSS, and JS. Colors are a shout-out to Bangladesh;
+              the boat thing in the Journey section is a little interactive bit I added for fun.
+            </p>
+            <button class="card__cta" type="button" data-scroll-target="#journey">
+              Try the boat →
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="journey" class="section section--dark section--split">
+        <div class="section__header">
+          <h2>Journey</h2>
+          <p>How I got here (abbreviated).</p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-grid__text">
+            <p>
+              I like to think of it like a boat on the Padma—you hit different stops. Bronx first,
+              then Colby, then healthcare and arts internships, then startup land. My family’s from
+              Bangladesh and that’s always in the background: community, faith, not giving up when it’s hard.
+            </p>
+            <ul class="journey-grid__stops">
+              <li><strong>Bronx</strong> — where I learned to show up and take opportunities seriously.</li>
+              <li><strong>Colby</strong> — found CS and STS, realized I wanted to build things that matter.</li>
+              <li><strong>Healthcare &amp; arts</strong> — NYC Health + Hospitals, Indigo Arts. Different worlds, same lesson: listen first.</li>
+              <li><strong>Æthos &amp; Semester in the City</strong> — startup ecosystem, real projects, real feedback.</li>
+            </ul>
+            <p>Click the boat below to “move” along the river.</p>
+          </div>
+          <div class="journey-grid__viz">
+            <div class="river-map">
+              <div class="river-map__river"></div>
+              <button class="river-map__boat" type="button" aria-label="Move boat along journey">
+                ⛵
+              </button>
+              <div class="river-map__tooltip" id="riverTooltip">
+                Click the boat to move along the journey.
+              </div>
+            </div>
+            <ol class="river-map__stages">
+              <li data-stage="1">Roots &amp; community</li>
+              <li data-stage="2">First steps in tech</li>
+              <li data-stage="3">Real-world impact</li>
+              <li data-stage="4">What’s next</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--light">
+        <div class="section__header">
+          <h2>Contact</h2>
+          <p>Say hi.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-grid__info">
+            <p>
+              Looking for internships in product, consulting, or technical strategy. If you’re building
+              something that cares about people as much as metrics, I’d love to hear from you.
+            </p>
+            <ul class="contact-list">
+              <li>Based in Bronx / Colby (Maine during the school year)</li>
+              <li>English, Bengali, Hindi</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/princess-ibtihaj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link contact-link--icon"
+                  aria-label="LinkedIn profile"
+                >
+                  <span class="icon-linkedin" aria-hidden="true">in</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- basic mailto form so submissions open an email draft -->
+          <form
+            class="contact-grid__form"
+            id="contactForm"
+            action="mailto:ihprin27@colby.edu"
+            method="POST"
+            enctype="text/plain"
+          >
+            <label>Name <input type="text" name="name" required /></label>
+            <label>Email <input type="email" name="email" required /></label>
+            <label>Message <textarea name="message" rows="4" required></textarea></label>
+            <button type="submit" class="btn btn--primary">Send email</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span class="footer-flag"></span> 
+      </p>
+      <a href="#top" class="site-footer__top">Back to top</a>
+    </footer>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
